@@ -1,0 +1,199 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ * Credits:
+ * https://github.com/chriskempson/tomorrow-theme
+ */
+/*highlight ma code---------------------------------------------------*/
+.pln {
+  color: #cccccc; }
+
+.str {
+  color: #99cc99; }
+
+.kwd {
+  color: #cc99cc; }
+
+.com {
+  color: #999999;
+  font-style: italic; }
+
+.typ {
+  color: #f99157; }
+
+.lit {
+  color: #f99157; }
+
+.pun {
+  color: #cccccc; }
+
+.opn {
+  color: #cccccc; }
+
+.clo {
+  color: #cccccc; }
+
+.tag {
+  color: #f2777a; }
+
+.atn {
+  color: #f99157; }
+
+.atv {
+  color: #66cccc; }
+
+.dec {
+  color: #f99157; }
+
+.var {
+  color: #f2777a; }
+
+.fun {
+  color: #6699cc; }
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+  background-color: #2d2d2d;
+  padding: 10px;
+  border: 1px solid #E1E1E8; }
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  color: #999999;
+  margin: 0 0 0 40px; }
+
+ol.linenums li {
+  line-height: 18px;
+  padding-left: 12px; }
+
+/*----------------------------------------------------------------------------------*/
+body{
+    background-image: url(../img/back.png);
+}
+
+.BigLogo{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/BigLogo.png);
+    background-repeat: no-repeat;
+    background-color: #1a181d;
+    background-position: center;
+    margin: 0 auto;
+	-webkit-filter:grayscale(1);
+}
+
+.BigLogoColor{
+   width: 100%;
+    height: 600px;
+    background-image: url(../img/BigLogo.png);
+    background-repeat: no-repeat;
+    background-color: #1a181d;
+    background-position: center;
+    margin: 0 auto;
+    -webkit-animation-delay: 4s;
+    -moz-transition:all 5s ease;
+	-webkit-transition:all 5s ease;
+	-ms-transition:all 5s ease;
+	-o-transition:all 5s ease;
+	transition:all 5s ease;
+    
+	-webkit-filter:grayscale(0);
+}
+.animateDiv h1{
+    color: #00B4CC;
+    padding-left: 3%;
+    padding-top: 15%;
+    font-family: Intro;
+    
+}
+.animateDiv h2{
+    color: #FA2A00;
+    padding-left: 3%;
+    font-family: Intro;
+}
+.animateDiv h3{
+    color: #F4FCE8;
+    padding-left: 3%;
+}
+
+#ex1{
+  -webkit-transform: matrix(2, 0, 1, 1, 22, 1);
+}
+
+.border{
+    background: #f2777a; 
+    border: 2px solid black; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+
+}
+.sh{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#sh1{
+    background-color: #9ce8f9;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    
+}
+
+#sh2{
+    background-color: #dbdada;
+    box-shadow: -6px -6px 8px -4px rgba(255,0,0,0.75),
+            6px -6px 8px -4px rgba(0,255,0,0.75),
+            6px 6px 8px -4px rgba(255,255,0,0.75),
+            -6px 6px 8px -4px rgba(0,0,255,0.75);
+    
+}
+
+#sh3{
+    background-color: #F4FCE8;
+    box-shadow: inset 3px 5px 8px #d6f4a9,
+            1px 1px 3px #597559;
+    border-radius: 30px; 
+}
+#sh4 {
+    position: relative;
+    height: 50px;
+    border: 1px solid #efefef;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+#sh4:before, sh4:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 70%;
+    max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+    height: 55%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -webkit-transform: skew(-15deg) rotate(-6deg);                 
+}
+            
+#sh4:after {
+    left: auto;
+    right: 10px;
+    -webkit-transform: skew(15deg) rotate(6deg);                 
+}
+@media only screen and (max-width: 768px) {
+    .BigLogo {
+    background-image: inherit;
+    height: 0px;
+    visibility: hidden;
+    }
+    .animateDiv{
+    visibility: hidden;
+    }
+}
+
+pre .prettyprint{
+    /*background-color: rgba(100, 100, 100, 0.1) !important;*/
+    background-color: #f00 !important;    
+}
+
